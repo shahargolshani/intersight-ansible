@@ -22,6 +22,12 @@ jobs:
 
       - name: Print Repository Variables
         run: |
+          echo "--- Test Variables ---"
+          echo "Repository: ${{ github.event.pull_request.author_association }}"
+          echo "triggering_actor: ${{ github.triggering_actor }}"
+
+      - name: Print Repository Variables
+        run: |
           echo "--- Repository Variables ---"
           echo "Repository: ${{ github.repository }}"              # Full repository name (e.g., owner/repo-name)
           echo "Repository Owner: ${{ github.repository_owner }}"   # Owner of the repository
