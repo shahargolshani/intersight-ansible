@@ -11,8 +11,9 @@ on:
       - main # You can specify other branches or use '*' for all branches
       - stable-*
     pull_request:
-      - main # You can specify other branches or use '*' for all branches
-      - stable-*
+      branches:
+        - main # You can specify other branches or use '*' for all branches
+        - stable-*
   workflow_dispatch:
 
 jobs:
