@@ -51,7 +51,9 @@ jobs:
       - name: Print Test Variables
         run: |
           echo "--- Test Variables ---"
-          echo "Repository: ${{ github.event.pull_request.author_association }}"
+          echo "Pull Request Author Role: ${{ github.event.pull_request.author_association }}"
+          echo "Pull Request Author Role: ${{ github.event.pull_request.author_association }}"
+          echo "Pull Request Author Role: ${{ github.event.pull_request.author_association }}"
           echo "triggering_actor: ${{ github.triggering_actor }}"
 
       - name: Print Repository Variables
